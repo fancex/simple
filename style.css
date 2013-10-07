@@ -1,3 +1,29 @@
+/*random*/
+.arrow-white {
+display: inline-block;
+width: 0;
+height: 0;
+vertical-align: top;
+border-top: 4px solid #fff;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+content: "";
+margin-top: 8px;
+margin-left: 2px;
+}
+
+.arrow-black {
+display: inline-block;
+width: 0;
+height: 0;
+vertical-align: top;
+border-top: 4px solid #000000;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+content: "";
+margin-top: 8px;
+margin-left: 2px;
+}
 /*accordion*/
 .simpleacc-title{
 font-weight:bold;
@@ -64,3 +90,85 @@ background-color:rgba(0,0,0,0.9);
 color:white;
 box-shadow: 5px 5px 10px 2px #333333;
 }
+
+/*simple menu*/
+.simple-menu{
+list-style-type:none;
+color:white;
+}
+.simple-menu ul{
+display:none;
+padding-left:0px;
+border-left:solid grey 5px;
+list-style-type:none;
+}
+.simple-menu li a{
+display: block;
+width: 100px;
+padding:2px;
+padding-left:9px;
+cursor:pointer;
+background-color:rgba(0,0,0,0.9);
+border-bottom:solid grey 1px;
+
+box-shadow: 5px 5px 10px 2px #333333;
+}
+.simple-menu li a:hover{
+background-color:rgba(0,0,0,0.99);
+border-bottom:solid grey 1px;
+}
+/*simple navbar*/
+.simple-bar-nav li{
+display:inline;
+list-style-type:none;
+padding:3px;
+}
+.simple-bar-nav a{
+
+}
+
+.simple-bar-nav li a:hover{
+background-color: rgba(0,0,0,0.8);
+border-radius: 5px;
+color:white;
+}
+.drop-menu li a{
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: white;
+	white-space: nowrap;
+
+}
+.simple-bar-nav li a{
+padding: 3px 20px;
+color:white;
+text-decoration:none;
+}
+.simple-bar{
+	border: solid grey 3px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.8);
+	color:white;
+}
+.simple-bar,.simple-bar-inner,.simple-bar-nav{
+/*height:40px;*/
+}
+.drop-menu {
+position:absolute;
+padding-left: 0px;
+display:list-item;
+list-style-type:none;
+background-color: rgba(0,0,0,0.8);
+border-radius: 0px 0px 9px 9px;
+border-left: solid grey 1px;
+border-bottom: solid grey 1px;
+border-right: solid grey 1px;
+}
+.drop-menu li{
+display:list-item;
+border:none;
+}
+
