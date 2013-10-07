@@ -119,12 +119,12 @@ border-bottom:solid grey 1px;
 }
 /*simple navbar*/
 .simple-bar-nav li{
-display:inline;
+display:inline-block;
 list-style-type:none;
 padding:3px;
 }
 .simple-bar-nav a{
-
+display:inline-block;
 }
 
 .simple-bar-nav li a:hover{
@@ -148,10 +148,14 @@ color:white;
 text-decoration:none;
 }
 .simple-bar{
-	border: solid grey 3px;
+margin:0px;
+	border: solid grey 1px;
 	border-radius: 5px;
-	background-color: rgba(0,0,0,0.8);
+	background-color: #333;
 	color:white;
+}
+.simple-bar-nav {
+margin:0px;
 }
 .simple-bar,.simple-bar-inner,.simple-bar-nav{
 /*height:40px;*/
@@ -161,7 +165,7 @@ position:absolute;
 padding-left: 0px;
 display:list-item;
 list-style-type:none;
-background-color: rgba(0,0,0,0.8);
+background-color:  #333;
 border-radius: 0px 0px 9px 9px;
 border-left: solid grey 1px;
 border-bottom: solid grey 1px;
