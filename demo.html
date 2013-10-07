@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="style.css" type="text/css">
+<div class="body-div">
+<p>Simple accordion</p>
+	<div class="simpleacc">
+		<div class="simpleacc-title">First SimpleAccordion</div>
+		<div class="simpleacc-inner">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisici elit...</p>
+		</div>
+
+	</div>
+	<div class="simpleacc">
+		<div class="simpleacc-title">Second SimpleAccordion</div>
+		<div class="simpleacc-inner">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisici elit...</p>
+		</div>
+
+	</div>
+	<div class="simpleacc">
+		<div class="simpleacc-title">Third SimpleAccordion</div>
+		<div class="simpleacc-inner">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisici elit...</p>
+		</div>
+
+	</div>
+</div>
+<div class="body-div">
+<p>Simple tabs </p>
+	<div class="simpletab" >
+		<ul class="simpletab-ul">
+			<li target="one"><a>One</a></li>
+			<li target="two"><a>two</a></li>
+			<li target="three" class="open"><a>Three</a></li>
+		</ul>
+		<div class="simpletab-inner" id="one">
+			<p>Hi, i'm the simpletab One!</p>
+		</div>
+		<div class="simpletab-inner" id="two">
+			<p>Hi, i'm the simpletab Two and i have another simpletab inside me!</p>
+			<div class="simpletab" >
+			<ul class="simpletab-ul">
+				<li target="sub-one" class="open"><a>Inner one</a></li>
+				<li target="sub-two"><a>Inner two</a></li>
+				<li target="sub-three"><a>Inner three</a></li>
+			</ul>
+			<div class="simpletab-inner" id="sub-one">
+			<p>Hi, i'm the inner-simpletab One and my li has class="open"!</p>
+			</div>
+			<div class="simpletab-inner" id="sub-two">
+			<p>Hi, i'm the inner-simpletab Two!</p>
+			</div>
+			<div class="simpletab-inner" id="sub-three">
+			<p>Hi, i'm the inner-simpletab Three!</p>
+			</div>
+			</div>
+		</div>
+		<div class="simpletab-inner" id="three">
+			<p>Hi, i'm the simpletab Three and i'm opened by default!</p>
+			<p>my li has class="open"!</p>
+		</div>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="script.js">
+</script>

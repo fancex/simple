@@ -1,4 +1,4 @@
-simple
-======
+Simple-Framwork
+===============
 
-Simple and minimal js framwork
+A minimal and simple JQuery Framework 

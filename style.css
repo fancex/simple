@@ -1,0 +1,53 @@
+/*accordion*/
+.simpleacc-title{
+font-weight:bold;
+border:solid black 1px;
+padding:3px;
+}
+.simpleacc-inner{
+display:none;
+border:solid black 1px;
+padding:3px;
+}
+.body-div{
+width:300px;
+}
+
+/*tabs*/
+.simpletab{
+
+}
+.simpletab-ul{
+margin:0px;
+margin-bottom:10px;
+margin-top:10px;
+padding-left: 15px;
+line-height: 20px;
+}
+.simpletab-ul li{
+display:inline;
+list-style-type:none;
+padding:10px;
+border:solid black 1px;
+border-bottom:none;
+border-radius: 3px 3px 0px 0px;
+line-height: 20px;
+float:left;
+position: relative;
+top: 5px;
+}
+.simpletab-inner{
+border-top:solid black 1px;	
+clear:both;
+padding-top:10px;
+}
+.simpletab-li-attivo{
+border-bottom: solid rgba(255, 255, 255, 0) 7px !important;	
+background-color:white;
+color:black;
+}
+.simpletab-inner .simpletab-inner{
+/*activate overflow when use a simpletab into another simpletab*/
+overflow: auto;
+height:200px;
+}
