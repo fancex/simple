@@ -62,16 +62,19 @@ $('.simple-bar-nav li a').hover(function(){
 	
 });
 $('.bar-drop').click(function(){
+	$('.s-active').removeClass('s-active')
+	$(this).addClass('s-active');
 	genitore=$(this).parent('.bar-dropdown');
 	target=$(genitore).find('.drop-menu');
 	if(target.is(':visible')===false){
 		pos=$(genitore).position();
 		target.css('left',pos.left-0);
-		target.css('top',$('#bottombar').position().top-2);
+		target.css('top',pos.top+genitore.height());
 		$('.drop-menu').hide();
 		target.slideToggle();
 	}else{
 		target.slideUp();
+		$('.s-active').removeClass('s-active');
 	}
 	
 

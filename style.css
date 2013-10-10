@@ -1,3 +1,22 @@
+.demo-body{
+width:940px;
+padding:20px;
+margin-right: auto;
+margin-left: auto;
+border:solid #333 2px;
+background-color:#fff;
+}
+.body-div{
+width:300px;
+margin-left:20px;
+}
+.body-div h3,.body-div-full h3,.body-div-full h1{
+margin-top:20px;
+border-bottom:solid #333 2px;
+border-left:solid #333 2px;
+padding-left:3px;
+color: #333;
+}
 /*random*/
 .arrow-white {
 display: inline-block;
@@ -34,9 +53,6 @@ padding:3px;
 display:none;
 border:solid black 1px;
 padding:3px;
-}
-.body-div{
-width:300px;
 }
 
 /*tabs*/
@@ -78,6 +94,9 @@ overflow: auto;
 height:200px;
 }
 /*simple tip */
+.simple-tip{
+cursor:pointer;
+}
 .simple-tipmenu{
 display:none;
 position:absolute;
@@ -121,14 +140,24 @@ border-bottom:solid grey 1px;
 .simple-bar-nav li{
 display:inline-block;
 list-style-type:none;
-padding:3px;
+padding:0px;
 }
 .simple-bar-nav a{
 display:inline-block;
+  font-size: 16px;
+  cursor:pointer;
 }
 
 .simple-bar-nav li a:hover{
-background-color: rgba(0,0,0,0.8);
+
+/*box-shadow: 5px 5px 10px 2px #333333;*/
+background-color:  #333;
+border-radius: 0px;
+color:white;
+}
+.drop-menu li a:hover{
+background-color: #333;
+text-shadow: 0px 0px 9px rgba(255, 255, 255,0.9);
 border-radius: 5px;
 color:white;
 }
@@ -138,21 +167,26 @@ color:white;
 	clear: both;
 	font-weight: normal;
 	line-height: 20px;
-	color: white;
+	color: white !important;
 	white-space: nowrap;
 
 }
 .simple-bar-nav li a{
 padding: 3px 20px;
-color:white;
+color:black;
 text-decoration:none;
 }
 .simple-bar{
-margin:0px;
-	border: solid grey 1px;
+font-size: 0;
+	margin:0px;
+	border: solid grey 0px;
 	border-radius: 5px;
-	background-color: #333;
-	color:white;
+	background-color: #888;
+	background-image: url('img/barsfondo.png');
+background-repeat: repeat-x;
+
+background-size: contain;
+
 }
 .simple-bar-nav {
 margin:0px;
@@ -161,18 +195,25 @@ margin:0px;
 /*height:40px;*/
 }
 .drop-menu {
+
+/*box-shadow: 5px 5px 10px 2px #333333;*/
 position:absolute;
 padding-left: 0px;
 display:list-item;
 list-style-type:none;
 background-color:  #333;
 border-radius: 0px 0px 9px 9px;
-border-left: solid grey 1px;
+border-left: solid grey 0px;
 border-bottom: solid grey 1px;
 border-right: solid grey 1px;
 }
 .drop-menu li{
 display:list-item;
 border:none;
+}
+.s-active{
+color:white !important;
+/*box-shadow: 5px 5px 10px 2px #333333;*/
+background-color:  #333;
 }
 
